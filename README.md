@@ -1,2 +1,2 @@
 # Study-Python
-    My fisrt repository to study Python
+    My fisrt repository to **Study Python**
