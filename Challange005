@@ -1,0 +1,4 @@
+n1 = int (input('write one number: '))
+a = n1 - 1
+s = n1 + 1
+print('The predecessor is: {} and the sucessor is: {}'.format(a, s))

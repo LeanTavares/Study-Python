@@ -1,0 +1,7 @@
+from this import d
+
+
+n1 = int(input('write any number'))
+d = n1 * 2
+t = n1 * 3
+print('The double is {} and the triple is {}'.format(d, t))

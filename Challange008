@@ -1,0 +1,4 @@
+metro = int(input('How many meters: '))
+cm = metro * 100
+mm = metro * 10007
+print('in centimeters: {} , in milimeters: {}'.format(cm ,mm))
