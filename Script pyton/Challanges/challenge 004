@@ -1,0 +1,6 @@
+
+thing = input('Write anything: ')
+print('Is a number - ' ,thing.isalnum())
+print('Is a alfabetic - ' ,thing.isalpha())
+print('Is a ascii code - ', thing.isascii())
+print('Is a decimal - ' ,thing.isdecimal())
