@@ -1,6 +1,6 @@
-n1 = int(input('1 score number: '))
-n2 = int(input('2 score number: '))
+n1 = float(input('1 score number: '))
+n2 = float(input('2 score number: '))
 
 s = n1 + n2
 m = s/2
-print('Your score average is: {}'.format(m) )
+print('Your score average is: {:.1f}'.format(m) )

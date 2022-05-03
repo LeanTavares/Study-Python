@@ -1,0 +1,6 @@
+w = float (input('width of wall in meter: '))
+h = float(input('height of wallin meter: '))
+area = h * w
+print('Your wall have {}m of area'.format(area))
+tint = area / 2
+print('you need {}l of tint'.format(tint))
