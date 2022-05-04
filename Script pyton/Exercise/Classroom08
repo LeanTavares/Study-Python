@@ -1,0 +1,4 @@
+from math import sqrt
+num = int(input('Write one number: '))
+root = math.sqrt(num)
+print('The root is {:.2f}'.format(root))

@@ -1,0 +1,6 @@
+km = float(input('Quilometers: '))
+day = int(input('Days: '))
+kmt = km * 0.15
+dayt = day * 60
+total = kmt + dayt
+print('your account was: ${:.2f}'.format(total))

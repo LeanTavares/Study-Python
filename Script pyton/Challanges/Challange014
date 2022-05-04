@@ -1,1 +1,3 @@
-temp
+temp = float(input('whats the temep in celsius: '))
+f = ((9*temp)/5)+32
+print('In fareheigth is : {}*F'.format(f))

@@ -1,0 +1,3 @@
+from math import trunc
+num = float(input('Write one value: '))
+print('The interger part is :{}'.format(trunc(num)))
