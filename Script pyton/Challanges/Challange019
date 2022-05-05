@@ -1,0 +1,11 @@
+from random import choice
+
+name1 = str(input('Enter name: '))
+name2 = str(input('Enter name: '))
+name3 = str(input('Enter name: '))
+name4 = str(input('Enter name: '))
+
+list = [name1, name2, name3, name4]
+
+choices = choice(list)
+print('{} is the choice'.format(choices))

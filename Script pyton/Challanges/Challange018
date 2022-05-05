@@ -1,0 +1,10 @@
+import math
+
+
+ang = float (input('Write a angle: '))
+sin = math.sin(math.radians(ang))
+print('The sine is: {:.2f}'.format(sin))
+cos = math.cos(math.radians(ang))
+print('The cosine is: {:.2f}'.format(cos))
+tang = math.tan(math.radians(ang))
+print('The tangent is: {:.2f}'.format(tang))
