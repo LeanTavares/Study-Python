@@ -1,0 +1,2 @@
+name = str(input('You full name: ')).strip()
+print('your name have Silva? {}'.format('silva' in name.lower()))
