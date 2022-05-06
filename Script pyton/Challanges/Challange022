@@ -1,0 +1,8 @@
+name = str(input('Enter full name: ')).strip()
+print('Your name in Upercase: {}'.format(name.upper()))
+print('Your name in Lowercase: {}'.format(name.lower()))
+print('Have {} letters'.format(len(name) - name.count(' ')))
+#print('The first name have {} letters'.format(name.find(' '))) conta quantas letras até o espaco
+
+separa = name.split() #cria uma lista com os nomes separados
+print('Your first name is {} and have {} letters'.format(separa[0],len(separa[0])))
