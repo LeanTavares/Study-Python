@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import math
 
 
@@ -5,3 +6,6 @@ cato  = float(input('Cateto oposto:'))
 cata = float(input('Ateto adj: '))
 hi = math.hypot(cato,cata)
 print('The Hipotenusa is: {:.2f}'.format(hi))
+=======
+cat  = float()
+>>>>>>> Stashed changes
