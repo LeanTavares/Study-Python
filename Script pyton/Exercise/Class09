@@ -1,0 +1,11 @@
+phrase = 'curso em video python'
+print(phrase[:13]) #do zero ao 13
+print(phrase[13:]) #do 13 ao fim
+print(phrase[1:15])# do 1 ao 15
+print(phrase[1:15:2]) # do um ao 15 pulando 2
+print(phrase.count('o')) #conta quantos 'o'
+print(phrase.upper().count('O')) #transforma td maiusculo e conta 'O' maiusculo
+print(len(phrase.strip())) #apaga os espacos antes da stringer
+print(phrase.replace('python', 'Android'))#troca palavra python por android
+print('curso'in phrase)#pesquisa palavra e retorna true ou false
+print(phrase.find('video'))#retorna posicao inicial da palavra
