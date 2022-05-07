@@ -1,0 +1,9 @@
+time = int(input('How many year your car have: '))
+# modo simplificado 
+# print('New Car'if time <=3 else'Old Car')
+
+#modo completo
+if time <= 3:         
+    print('New Car')
+else:
+    print('Old Car')

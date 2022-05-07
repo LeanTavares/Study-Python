@@ -1,2 +1,5 @@
 name = str(input('Enter your full name: '))
-name = 
+n = name.split()
+print('your first name is {}'.format(n[0]))# mostra primeiro nome
+print('your last name is {}'.format(n[len(n)-1]))# mostra o ultimo nome
+ 
