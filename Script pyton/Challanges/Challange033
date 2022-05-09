@@ -1,0 +1,19 @@
+# enter 3 nubers and print de lower and the biggest
+
+num1 = int(input('Enter a number: '))
+num2 = int(input('Enter other number: '))
+num3 = int(input('Enter another number: '))
+#verificacao de qual o menor
+low = num1
+if num2<num1 and num2<num3:
+    low = num2
+if num3<num1 and num3<num2:
+    low = num3
+print('The lower is {}'.format(low))
+#verificacao de qual o maior
+max = num1
+if num2>num1 and num2>num3:
+    max = num2
+if num3>num1 and num3>num2:
+    max = num3
+print('The bigest is {}'.format(max))

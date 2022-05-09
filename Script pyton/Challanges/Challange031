@@ -1,0 +1,11 @@
+# calc trip price
+trip = float(input('Enter a distance of trip: '))
+#maneira simples
+price = trip * 0.50 if trip <= 200 else trip * 0.45
+#maneira completa
+'''if trip <= 200:
+    price = trip * 0.50
+else:
+    price = trip * 0.45
+'''
+print('Your ticket is ${:.2f}'.format(price))

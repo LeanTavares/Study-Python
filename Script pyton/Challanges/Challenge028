@@ -1,0 +1,14 @@
+# guessing game from 0 to 5
+from random import randint
+from time import sleep
+
+guess = randint(0, 5)  #faz o computador pensar
+
+print('I`ll think of a number from 0 to 5, try to guess!!')
+player = int(input('How number i think? ')) #o jogador tenta adivinhar
+print('Processing...')
+sleep(2) #faz uma firula e o programa aguarda 2 seg
+if player == guess:
+    print('Congrats you got it right!')
+else:
+    print('You loose! I think {}'.format(guess))

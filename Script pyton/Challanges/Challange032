@@ -1,0 +1,6 @@
+#leap year calculation
+year = int(input('Enter a year: '))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0: #leep form
+    print('{} is a leep year'.format(year))
+else:
+    print('{} is a not leep year'.format(year))

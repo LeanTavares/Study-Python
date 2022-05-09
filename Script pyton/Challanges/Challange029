@@ -1,0 +1,8 @@
+# app de radar calcula a multa acima de 80 ,R$7 cada km acima
+
+speed = float(input('What is the speed of the car: '))
+if speed > 80:
+    print('Fined, you exceeded the 80 km/h limit')
+    fines = (speed - 80) * 7
+    print ('Your traffic fine is: {:.2f}'.format(fines))
+print('Ok, have a nice day!')
