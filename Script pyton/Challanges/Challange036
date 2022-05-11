@@ -1,0 +1,9 @@
+price = float(input('How is the house price?: '))
+sal = float(input('How is the salary?: '))
+y = int(input('How much years?: '))
+part  = price / (y * 12)
+min = sal * 30 / 100
+if part <= min:
+    print('loan granted, the installment will be ${:.2f}'.format(part))
+else:
+    print('loan denied')

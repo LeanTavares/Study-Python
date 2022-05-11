@@ -1,0 +1,7 @@
+name = str(input('whats your name'))
+if name == 'lean':
+    print('Perfect name')
+elif name == 'pedro' or name == 'maria':
+    print('popular name')
+else:
+    print('wrong name')
