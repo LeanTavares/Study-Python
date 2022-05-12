@@ -1,0 +1,8 @@
+#calc IMC (Corporal mass index) 
+
+kg = float(input('what's your weight in kg? '))
+h = float(input('what's your height in m? '))
+imc = kg / (h ** 2)
+if imc <= 18.5:
+    print('Your IMC is {:.2f} and you are under weight'.format(imc))
+elif imc < 18.5 and imc 

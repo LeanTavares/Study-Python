@@ -1,0 +1,15 @@
+#triangle analysis vol 2.
+s1 = float(input('enter a segment:'))
+s2 = float(input('enter a segment:'))
+s3 = float(input('enter a segment:'))
+
+if s1 < s2 + s3 and s2 < s1 + s3 and s3 < s1 + s2:
+    print('is a triangle!')
+    if s1 == s2 == s3:
+        print('equilatero!')
+    elif s1 != s2 != s3 != s1:
+        print('escaleno!')
+    else:
+        print('Isosceles!')
+else:
+    print('not a triangle')

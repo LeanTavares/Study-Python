@@ -1,0 +1,17 @@
+#categorias de alunos na natacao
+
+from datetime import date
+born = int(input('what year you born?: '))
+current = date.today().year
+age =  current - born
+
+if age <= 9:
+    print('classification: child {} years'.format(age))
+elif age <= 14:
+    print('classification: childish {} years'.format(age))
+elif age <= 19:
+    print('classification: junior {} years'.format(age))
+elif age <= 25:
+    print('classification: senior {} years'.format(age))
+else:
+    print('classification: master {} years'.format(age))
