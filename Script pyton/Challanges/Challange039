@@ -1,0 +1,11 @@
+#military enlistment
+from datetime import date
+act = date.today().year
+y = int(input('what year you born? '))
+age = act - y
+if age == 18:
+    print('You need to enlist this year')
+elif age > 18:
+    print('You should have enlisted {} years'.format(age - 18))
+elif age < 18:
+    print('{} years to go until enlistment'.format(age - 18))

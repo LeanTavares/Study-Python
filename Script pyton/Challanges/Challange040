@@ -1,0 +1,12 @@
+# avarage score
+
+
+n1 = float(input('enter a score 1: '))
+n2 = float(input('enter a score 2: '))
+av = (n1 + n2 ) /2
+if 7 > av >= 5:
+    print('You are in recovery')
+elif av < 5:
+    print('You are disapproved')
+else:
+    print('you are approved')

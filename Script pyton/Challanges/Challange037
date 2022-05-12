@@ -1,0 +1,16 @@
+#convertion number int to bin oct and hex 
+
+num = int(input('enter a integer number: '))
+print(''' Change a option:
+[1] convert to binary 
+[2] convert to octal
+[3] convert to hex''')
+op = int(input('your option: '))
+if op == 1:
+    print('{}'.format(bin(num)[2:]))
+elif op == 2:
+    print('{}'.format(oct(num)[2:]))
+elif op == 3:
+    print('{}'.format(hex(num)[2:]))
+else:
+    print('wrong option')
