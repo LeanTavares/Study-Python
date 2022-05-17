@@ -1,0 +1,6 @@
+s = int(input('Start: '))
+st = int(input('step: '))
+e = int(input('end: '))
+for c in range(s, e+1, st):
+    print(c)
+print('fim')

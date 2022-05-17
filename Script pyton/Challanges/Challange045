@@ -1,0 +1,50 @@
+#JO KEN PO game
+
+from random import randint
+from time import sleep
+items = ('rock', 'paper', 'scissors')
+comp = randint(0, 2)
+print(''' Select your option
+[ 0 ] Rock
+[ 1 ] Paper
+[ 2 ] Scissors''')
+player = int(input('Whats your choice - '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+sleep(1)
+print('-=' * 20)
+print('The computer chose {}'.format(items[comp]))
+print('You chose {}'.format(items[player]))
+print('-=' * 20)
+if comp == 0:
+    if player == 0:
+        print('TIED')
+    elif player == 1:
+        print('YOU WIN')
+    elif player == 2:
+        print('YOU LOOSE')
+    else:
+        print('ERROR')    
+elif comp == 1:
+    if player == 0:
+        print('YOU LOOSE')
+    elif player == 1:
+        print('TIED')
+    elif player == 2:
+        print('YOU WIN')
+    else:
+        print('ERROR') 
+
+elif comp == 2:
+    if player == 0:
+        print('YOU WIN')
+    elif player == 1:
+        print('YOU LOOSE')
+    elif player == 2:
+        print('TIED')
+    else:
+        print('ERROR') 
+print('-=' * 20)        
