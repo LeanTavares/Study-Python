@@ -1,0 +1,3 @@
+#the first term and the ratio of a PA. At the end, show the first 10 terms of this progression.
+s= int(input('Enter a first term of PA: '))
+print('')

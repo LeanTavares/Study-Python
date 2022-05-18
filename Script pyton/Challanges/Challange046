@@ -1,0 +1,9 @@
+# regresive count of fireworks
+
+from time import sleep
+print('Get ready for the fireworks')
+sleep(1)
+for f in range(10,-1,-1):
+    print(f)
+    sleep(1)
+print('play the fireworks*******')

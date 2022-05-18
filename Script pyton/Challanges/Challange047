@@ -1,0 +1,4 @@
+# every even number ate the 50
+for count in range(0,51,2):
+    print(count)
+print('END')
