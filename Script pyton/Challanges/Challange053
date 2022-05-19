@@ -1,0 +1,14 @@
+#palindrome
+
+p = str(input('write something: ')).strip().upper()
+w = p.split()
+j = ''.join(w)
+inv = ''
+inv = j[::-1] # modo simples
+''''for l in range (len(j) - 1, -1, -1): # modo dificil com laco
+    inv += j[l]'''
+print(inv)
+if inv == j:
+    print('its a palindrome ')
+else:
+    print('Its a not a palindrome ')

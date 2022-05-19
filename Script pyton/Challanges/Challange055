@@ -1,0 +1,16 @@
+#the heaviest and the lowest
+ 
+b=0
+l=0
+for i in range (1,6):
+    weight = float(input('{} people weight: '.format(i)))
+    if i == 1:
+       b = weight
+       l = weight
+    else:
+        if weight > b:
+            b = weight
+        if weight < l:
+            l = weight  
+print('the heaviest weight is {} '.format(b))
+print('the lowest weight os {}'.format(l))

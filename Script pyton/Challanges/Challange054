@@ -1,0 +1,16 @@
+# read the birth year of seven people. At the end, show how many people have not yet reached the age of majority and how many are older.
+
+from datetime import date
+adult = 0
+minor = 0
+ay = date.today().year
+for i in range (1,8):
+    y = int(input('Enter a born year: '))
+    a = ay - y
+    if a >= 21:
+        adult += 1
+    else:
+        minor +=1
+print('{} adults and {} minors'.format(adult, minor))
+
+

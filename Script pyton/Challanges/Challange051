@@ -1,3 +1,8 @@
 #the first term and the ratio of a PA. At the end, show the first 10 terms of this progression.
-s= int(input('Enter a first term of PA: '))
-print('')
+
+s = int(input('Enter a first term of PA: '))
+r = int(input('Enter a ratio of PA: '))
+t = s + (10 - 1)*r
+for c in range(s, t, r):
+    print('{} '.format(c), end=' >')
+print('finish')
