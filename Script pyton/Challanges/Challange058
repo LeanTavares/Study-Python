@@ -1,12 +1,18 @@
+#guess gaming
 from random import randint
 r = randint(0,10)
 c=0
-print('I`ll think of a number from 0 to 5, try to guess!!')
-player = int(input('How number i think? '))
-print('Processing...')
-
-while r == player:
-    print('You loose! I think {}'.format(r))
-    c+=1
-print('Congrats you got it right!')
+correctly = False
+print('I`ll think of a number from 0 to 10, try to guess!!')
+while not correctly:
+    player = int(input('How number i think? '))
+    c += 1
+    if player == r:
+        correctly = True
+    else:
+        if player < r:
+            print('More, try one more time...')
+        elif player > r:
+            print('least, try one more time')
+print('You Win! I think {}'.format(r))
 print('You try {} times'.format(c))

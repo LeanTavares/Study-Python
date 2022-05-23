@@ -1,0 +1,12 @@
+int1 = int(input('Enter a number: '))
+int2 = int(input('Enter other number: '))
+m = 0
+print(''''
+[ 1 ] sum
+[ 2 ] multiply
+[ 3 ] bigger
+[ 4 ] new numbers
+[ 5 ] exit''')
+while m != 5:
+    if m == 5:
+        print('{}'.format(int1 + int2)) 
