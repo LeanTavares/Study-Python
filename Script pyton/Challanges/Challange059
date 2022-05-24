@@ -1,12 +1,33 @@
+# math menu
+from time import sleep
 int1 = int(input('Enter a number: '))
 int2 = int(input('Enter other number: '))
 m = 0
-print(''''
-[ 1 ] sum
-[ 2 ] multiply
-[ 3 ] bigger
-[ 4 ] new numbers
-[ 5 ] exit''')
 while m != 5:
-    if m == 5:
-        print('{}'.format(int1 + int2)) 
+    print(''''
+    [ 1 ] sum
+    [ 2 ] multiply
+    [ 3 ] bigger
+    [ 4 ] new numbers
+    [ 5 ] exit''')
+    m = int(input('Option: '))
+
+    if m == 1:
+        print('The sum is = {}'.format(int1 + int2)) 
+    elif m == 2:
+        print('The Product is = {}'.format(int1 * int2)) 
+    elif m == 3:
+        if int1 < int2:
+            print('{}is the biggest'.format(int1))
+        else:
+            print('{} is the biggest'.format(int2)) 
+    elif m == 4:
+        print('Enter the numbers again!')
+        int1 = int(input('Enter a number: '))
+        int2 = int(input('Enter other number: '))
+    elif m == 5:
+        print('Ending....')
+    else: 
+        print('Wrong option!')
+    sleep(2)
+print('End of system') 

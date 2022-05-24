@@ -1,0 +1,13 @@
+#fatorial
+#from math import factorial
+n = int(input('Enter a number to calculate the factorial: '))
+c = n
+f = 1
+'''f = factorial(n)
+print('The factorial is: {} '.format(f))''' #maneira fácil
+while c > 0:
+    print('{}'.format(c), end='')
+    print(' x 'if c > 1 else' = ', end='')
+    f *= c
+    c -= 1 
+print('{}'.format(f))
