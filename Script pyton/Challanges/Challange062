@@ -1,0 +1,15 @@
+#the first term and the ratio of a PA. At the end, show the first 10 terms of this progression (whith while) COMPLETE.
+
+f = int(input('Enter a first term of PA: '))
+r = int(input('Enter a ratio of PA: '))
+all = 0
+t = f
+cont = 1
+m = 10
+while m != 0:
+    all = all 
+    while cont<= all:
+        print('{} >'.format(t),end='')
+        t += r
+        cont += 1
+print('end')
