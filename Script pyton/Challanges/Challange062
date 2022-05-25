@@ -7,9 +7,11 @@ t = f
 cont = 1
 m = 10
 while m != 0:
-    all = all 
+    all = all + m
     while cont<= all:
         print('{} >'.format(t),end='')
         t += r
         cont += 1
-print('end')
+    print('pause')
+    m = int(input('How many terms do you want?'))
+print('Finished whith {} terms'.format(all))

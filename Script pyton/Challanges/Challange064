@@ -1,0 +1,7 @@
+# read multiple integers by keyboard. The program will only stop when the user enters the value 999, which is the stop condition. At the end, show how many numbers were entered and what was the sum between them
+n = cont = sum =0
+while n != 999:
+    n = int(input('Enter a number [999 to stop]: '))
+    cont += 1
+    sum += n
+print('end, you enter {} numbers and the sum is {}'.format(cont - 1 , sum - 999))
