@@ -1,19 +1,8 @@
-op = 'Y'
-sum = av = big = low = 0
-cont = 0
-while op in 'Y':
-    n = int(input('Enter a number:'))
-    sum += n
-    cont += 1 
-    if cont == 1:
-        big = low = n
-    else:
-        if n > big:
-            big = n
-        if n < low:
-            low = n
-    op = str(input('Continue? [Y/N]: ')).strip().upper()[0]
-av = sum / cont
-print('You enter {} numbers and the avarege is {:.2f}!'.format(cont, av))
-print('The biggest is {}'.format(big))
-print('The smallest is {}'.format(low))
+sum = cont = 0
+while True:
+    num = int(input('Enter a number (999 to break): '))
+    if num == 999:
+        break
+    cont += 1
+    sum += num
+print(f'The sum of {cont} numbers is {sum}!')

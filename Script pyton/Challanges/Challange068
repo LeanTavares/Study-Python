@@ -1,0 +1,29 @@
+from random import randint
+
+v = 0
+while True:
+    p = int(input('Enter a number to play even or odd: '))
+    ran = randint(0, 11)
+    total = p + ran
+    op = ' '
+    while op not in 'EO':
+        op = str(input('Even or Odd? [E/O] ')).strip().upper()[0]
+    print(f'You Play {p} and the computer plays {ran}!',end='')
+    print(' Gave Even 'if total % 2 == 0 else ' Gave Odd ')
+    if op == 'E':
+        if total % 2 == 0:
+            print('You win!')
+            v += 1
+        else:
+            print('You loose!')
+            break
+    elif op == 'O':
+        if total % 2 == 1:
+            print('You Win!')
+            v += 1
+        else:
+            print('You loose!')
+            break
+    print('lets play again')
+print(f'GAME OVER!!! you win {v} times!')                
+
