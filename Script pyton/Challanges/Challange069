@@ -1,0 +1,5 @@
+while True:
+    age = int(input('Enter a Age: '))
+    G = str(input('Enter a Gender[M/F]: ')).strip().upper()[0]
+    c = str(input('Continue? [Y/N] ')).strip().upper()[0]
+    if c == 'YN'
