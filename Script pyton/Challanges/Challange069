@@ -1,5 +1,22 @@
+adults18 = mens = w20 = 0
+
 while True:
     age = int(input('Enter a Age: '))
-    G = str(input('Enter a Gender[M/F]: ')).strip().upper()[0]
-    c = str(input('Continue? [Y/N] ')).strip().upper()[0]
-    if c == 'YN'
+    g = ' '
+    while g not in'MF': 
+        g = str(input('Enter a Gender[M/F]: ')).strip().upper()[0]
+    if age >= 18:
+       adults18 += 1
+    if g == 'M':
+        mens += 1
+    if g == 'F' and age < 20:
+        w20 += 1
+    c = ' '
+    while c not in 'YN': 
+        c = str(input('Continue? [Y/N] ')).strip().upper()[0]
+    if c == 'N':
+        break
+print(f'A total of Adults is: {adults18}')
+print(f'A total of mens is: {mens}')
+print(f'A total of Womans under 20 is: {w20}')
+    
