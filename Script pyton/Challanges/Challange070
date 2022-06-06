@@ -1,0 +1,20 @@
+total = tot1000 = cheaper = cont = 0
+prodcheap = ' ' 
+while True:
+    prod = str(input('Product name: '))
+    price = float(input('Price $'))
+    total += price
+    cont += 1
+    if cont == 1 or price < cheaper:
+        cheaper = price
+        prodcheap = prod
+    if price > 1000:
+        tot1000 += 1
+    c = ' '
+    while c not in 'YN':
+        c = str(input('Continue?[Y/N]: ')).strip().upper()[0]
+    if c == 'N':
+        break
+print(f'Total: ${total:.2f}')
+print(f'{tot1000} products costing more than $1000')
+print(f'{cheaper} is the price of the cheapest product')
