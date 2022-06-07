@@ -1,0 +1,20 @@
+from re import A
+
+
+lanche = ('hamburguer', 'suco', 'pudim', 'pizza')
+
+for cont in range(0, len(lanche)):#maneira 1
+    print(f'comi {lanche[cont]}')
+
+for comida in lanche:#maneira 2
+    print(f'Eu vou comer {comida}')
+
+for pos,comida in enumerate(lanche):#maneira p/ contar posicoes
+    print(f'eu vou comer {comida} ,na posição {pos}')
+a = (2,5,4,7,5)
+b = (6,9,10,3,5)
+c = b + a # junta duas tuplas em uma
+print(c)#mostra uniao das duas tuplas
+print(c.count(5))# mostra quantas vezes aparece o n 5
+print(c.index(10))# mostra a posicao de 10
+print(sorted(c))# mostra em ordem
