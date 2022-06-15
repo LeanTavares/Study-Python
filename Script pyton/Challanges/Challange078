@@ -1,0 +1,21 @@
+list = []
+max = 0
+min = 0
+for c in range(0, 5):
+    list.append(int(input(f'enter a number for {c}  position: ')))
+    if c == 0:
+        max = min = list [c]
+    else:
+        if list[c] > max:
+            max = list[c]
+        if list[c] < min:
+            min = list[c]
+print(f'the list is {list}')
+print(f'The biggest is {max} in position', end=' ')
+for i, v in enumerate (list):
+    if v == max:
+        print(f'{i}...', end= ' ')
+print(f'The lower is {min}in position', end = ' ')
+for i, v in enumerate (list):
+    if v == min:
+        print(f'{i}...', end= ' ')
