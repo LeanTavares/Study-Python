@@ -1,0 +1,28 @@
+temp = []
+data = []
+hm = hl = cont = 0
+while True:
+    temp.append(str(input('Name: ')))
+    temp.append(str(input('Heigth: ')))
+    if len(data) == 0:
+        hm = hl = temp[1]
+    else:
+        if temp[1] > hm:
+            hm = temp[1]
+        if temp[1] < hl:
+            hl = temp[1]
+    data.append(temp[:])
+    temp.clear()
+    resp = str(input('Continue? [y/n]: ')).strip().upper()
+    if resp in 'N':
+        break
+print('The list have', len(data),'data')
+print('the hightest weight is: ', hm, end =' ')
+for p in data:
+    if p[1] == hm:
+        print(p[0], end=' ')
+print('the lowewst weight is: ', hl, end=' ')
+for p in data:
+    if p[1] == hl:
+        print(p[0],end =' ')
+print()

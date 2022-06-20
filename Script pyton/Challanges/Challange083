@@ -1,6 +1,6 @@
- exp = str(input('Enter a expression: '))
- list = []
- for simb in exp:
+exp = str(input('Enter a expression: '))
+list = []
+for simb in exp:
     if simb == '(':
          list.append('(')
     elif simb == ')':
@@ -12,4 +12,4 @@
 if len(list) == 0:
     print('Your expression are ok!')
 else:
-    print('Dont have ()')
+    print('Wrong expression, verify ()')

@@ -1,0 +1,3 @@
+galera = [['leo',12],['lina',56],['lais',4],['alda',78]]
+for p in galera:
+    print(p[1])
