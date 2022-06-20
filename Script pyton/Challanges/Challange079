@@ -1,0 +1,11 @@
+num = list()
+while True:
+    n = int(input('Enter a Number: '))
+    if n not in num:
+        num.append(n)
+        print('sucess!')
+    r  = str(input('Continue? [Y/N]: ')).strip().upper()[0]
+    if r in'N':
+        break
+num.sort()
+print(f'Your list is - {num}')
