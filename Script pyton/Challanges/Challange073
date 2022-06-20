@@ -1,0 +1,6 @@
+club = ('Corinthians','Palmeiras','Atlético-MG','Coritiba','América-MG','São Paulo'	,'Internacional','Athletico-PR','Santos','Botafogo','Flamengo','Goiás','Fluminense','Avaí','Bragantino','Ceará','Juventude','Cuiabá','Atlético-GO','Fortaleza')
+
+print(f'The top five is {club[0:5]}')
+print(f'The last placed {club[-4:]}')
+print(f'in alfabetic order {sorted(club)}')
+print(f'Flamengo is {club.index("Flamengo")+1}º posição')

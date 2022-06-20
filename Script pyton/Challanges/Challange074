@@ -1,0 +1,6 @@
+from random import randint
+n =(randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,10))
+for i in n:
+    print(f'{i}', end='')
+print(f'\nThe high {max(n)}')
+print(f'The low {min(n)}')

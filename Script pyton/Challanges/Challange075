@@ -1,0 +1,13 @@
+n =(int(input('Enter a number: ')),
+    int(input('Enter a number: ')),
+    int(input('Enter a number: ')),
+    int(input('Enter a number: ')))
+print(f'the number 9 appeared {n.count(9)} times')
+if 3 in n:
+    print(f'the number 3 appeared in a {n.index(3)+1}º position ')
+else:
+    print('the number 3 was not entered')
+print(f'The even numbers is:',end='')
+for i in n:
+    if i % 2 == 0:
+        print(n, end=' ') 
