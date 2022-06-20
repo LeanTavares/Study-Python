@@ -1,0 +1,16 @@
+num = list()
+even = list()
+odd = list()
+while True:
+    num.append(int(input('Enter a number: ')))
+    resp = str(input('Continue? [Y/N]: ')).strip().upper()
+    if resp in'N':
+        break
+for i, v in enumerate(num):
+    if v % 2 == 0:
+        even.append(v)
+    elif v % 2 != 0:
+        odd.append(v)
+print(f'The list is {num}')
+print(f'The odd list is {odd}')
+print(f'The even list is {even}')

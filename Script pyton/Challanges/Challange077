@@ -1,0 +1,7 @@
+words = ('know','bird','dream','people','place','meet','watching','paradise','devil')
+print('Vogals')
+for p in words:
+    print(f'\nIn word {p} have ',end=' ')
+    for l in p:
+        if l.lower() in 'aeiou':
+            print(l, end=' ')

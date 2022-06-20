@@ -1,0 +1,13 @@
+val = []
+while True:
+    val.append(int(input('Enter a number: ')))
+    resp = str(input('Continue? [Y/N]: ')).strip().upper()
+    if resp in'N':
+        break
+print(f'Your list have {len(val)} elements')
+val.sort(reverse=True)
+print(f'Your list in descending order is {val}')
+if 5 in val:
+    print('number 5 is on the list')
+else:
+    print('The number 5 is out of list')

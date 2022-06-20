@@ -1,0 +1,13 @@
+list = ('Pencil', 1.75,
+        'pencil',2,
+        'book', 15.90,
+        'Bag', 45.80,
+        'notepad', 34.90)
+print('-'*30)
+print('price list')
+print('-'*30)
+for pos in range(0, len(list)):
+    if pos % 2 == 0:
+        print(f'{list[pos]:.<20}', end = ' ')
+    else:
+        print(f'R${list[pos]:>7.2f}')
