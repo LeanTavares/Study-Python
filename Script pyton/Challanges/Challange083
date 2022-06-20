@@ -1,1 +1,15 @@
-exc = str(input('E'))
+ exp = str(input('Enter a expression: '))
+ list = []
+ for simb in exp:
+    if simb == '(':
+         list.append('(')
+    elif simb == ')':
+        if len(list) > 0:
+            list.pop()
+        else:
+            list.append(')')
+            break
+if len(list) == 0:
+    print('Your expression are ok!')
+else:
+    print('Dont have ()')
