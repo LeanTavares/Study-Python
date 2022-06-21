@@ -2,10 +2,10 @@ from datetime import datetime
 data = {}
 data['name'] = str(input('Name: '))
 born = int(input('Year of born: '))
-data['age'] = datetime.now().Year - born
-data['ctps'] = int(input('Work wallet (dont have): '))
+data['age'] = datetime.now().year - born
+data['ctps'] = int(input('Work wallet (dont have = 0): '))
 if data['ctps'] != 0 :
     data['contract'] = int(input('year of contratation: '))
     data['salary'] = float(input('Salary: $ '))
-    data['retirement'] =((data['contract'] +35)-datetime.now().Year)
+    data['retirement'] =((data['contract'] +35)-datetime.now().year)
 print(data)
