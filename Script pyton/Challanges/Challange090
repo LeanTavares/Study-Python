@@ -1,0 +1,13 @@
+stu = {}
+stu['name'] = str(input('Enter a name: '))
+stu['Average'] = float(input(f'The average of {stu["name"]}: '))
+if stu['Average'] >= 7:
+    stu['status'] = 'Approved'
+elif 5 <= stu['Average'] < 7 :
+    stu['status'] = 'Recuperation'
+else:
+    stu['status'] = 'Reproved'
+
+for k, v in stu.items():
+    print(f'{k} its same as {v}')
+
