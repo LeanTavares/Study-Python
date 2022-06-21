@@ -8,7 +8,7 @@ while True:
     resp = str(input('continue?[Y/N]: ')).strip().upper()
     if resp in 'N':
         break
-print(f'{"No.":<4}{"NAME":<10}{"MÉDIA":.8}')
+print(f'{"No.":<4}{"NAME":<10}{"average":.8}')
 for i, a in enumerate(list):
     print(f'{i:<4}{a[0]:<10}{a[2]:>8.1f}')
 while True:
