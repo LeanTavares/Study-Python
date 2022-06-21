@@ -1,0 +1,19 @@
+list = []
+while True:
+    name = str(input('Name: '))
+    score1 = float(input('Score1: '))
+    score2 = float(input('Score2: '))
+    av = (score1 + score2) / 2 
+    list.append([name, [score1, score2], av])
+    resp = str(input('continue?[Y/N]: ')).strip().upper()
+    if resp in 'N':
+        break
+print(f'{"No.":<4}{"NAME":<10}{"MÉDIA":.8}')
+for i, a in enumerate(list):
+    print(f'{i:<4}{a[0]:<10}{a[2]:>8.1f}')
+while True:
+    opc = int(input('Show the score of which student?(999 break): '))
+    if opc == 999:
+        break
+    if opc <= len(list) - 1:
+        print(f'Scores of{list[opc][0]} are {list[opc][1]}')

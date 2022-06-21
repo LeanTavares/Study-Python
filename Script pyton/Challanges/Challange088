@@ -1,0 +1,21 @@
+from random import randint
+list = []
+game = []
+q = int(input('how much games do you need?: '))
+t = 1
+while t<=q:
+    cont = 0
+    while True:
+        num = randint(1, 60)
+        if num not in list:
+            list.append(num)
+            cont+=1
+        if cont>=6:
+            break
+    t+=1
+    game.append(list[:])
+    list.sort()
+    list.clear()
+print()
+for i ,l in enumerate(game):
+    print(f'Game{i+1}:{l}')
