@@ -1,0 +1,6 @@
+from random import randint
+game = {'player1': randint(1,6),
+        'player2':randint(1,6),
+        'player3':randint(1,6),
+        'player4':randint(1,6),}
+print('Number sorted: ')
