@@ -1,0 +1,20 @@
+people = dict()
+crowd = list()
+while True:
+    people.clear()
+    people['name'] = str(input('Name: '))
+    while True:
+        people['gender'] = str(input('Gender [M/F]: ')).upper()[0]
+        if people ['gender'] in 'MF':
+            break
+        print('ERROR: Only [M/F]')
+    people['age'] = int(input('Age: '))
+    crowd.append(people.copy())
+    while True:
+        r = str(input('Continue? [Y/N]:')).upper()[0]
+        if r in 'YN':
+            break
+        print('Error: Only [Y/N]')
+    if r == 'N':
+        break
+
