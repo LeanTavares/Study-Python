@@ -1,5 +1,6 @@
 people = dict()
 crowd = list()
+sum = av = 0
 while True:
     people.clear()
     people['name'] = str(input('Name: '))
@@ -9,6 +10,7 @@ while True:
             break
         print('ERROR: Only [M/F]')
     people['age'] = int(input('Age: '))
+    sum += people['age']
     crowd.append(people.copy())
     while True:
         r = str(input('Continue? [Y/N]:')).upper()[0]
@@ -17,4 +19,18 @@ while True:
         print('Error: Only [Y/N]')
     if r == 'N':
         break
+print(f'Total of {len(crowd)} people inserted')
+av = sum / len(crowd)
+print(f'The avarage of age is {av:5.2f} years old')
+print('The womans is: ')
+for p in crowd:
+    if p['gender'] in 'Ff':
+        print(f'{p["name"]} ',end='')
+print()
+print('Peoples up of avaregers: ')
+for p in crowd:
+    if p['age'] >= av:
+        print('  ')
+        for k, v in p.items():
+            print(f'{k} = {v}: ',end='')
 
