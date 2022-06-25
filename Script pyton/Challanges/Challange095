@@ -1,17 +1,45 @@
-player = []
+from time import time
+from unicodedata import name
+
+
+club = []
+player = {}
 matches = []
-player['name'] = str(input('player name: '))
-t = int(input(f'How many games {player["name"]} played?'))
-for c in range(0, t):
-    matches.append(int(input(f'How meny goals on match{c}?')))
-player['goals'] = matches[:]
-player['total'] = sum(matches)
+while True:
+    player.clear()
+    player['name'] = str(input('player name: '))
+    t = int(input(f'How many games {player["name"]} played?'))
+    matches.clear()
+    for c in range(0, t):
+        matches.append(int(input(f'How meny goals on match{c}?')))
+    player['goals'] = matches[:]
+    player['total'] = sum(matches)
+    club.append(player.copy())
+    while True:
+        r = str(input('Continue? [Y/N]:')).upper()[0]
+        if r in 'YN':
+            break
+        print('Error: Only [Y/N]')
+    if r == 'N':
+        break
 print()
-print(player)
-for k, v in player.items():
-    print(f'O campo {k} have a value {v}')
+print('cod',end='')
+for i in player.keys():
+    print(f'{i:<15}', end='')
 print()
-print(f'the player {player["name"]} plays {len(player["goals"])} matches')
-for i, v in enumerate(player['goals']):
-    print(f'  => on matche {i}, make {v} goals')
-print(f'a total of {player["total"]}')
+for k, v in enumerate(club):
+    print(f'{k:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
+    print()
+while True:
+    find = int(input('How player do you want to see? (999 to stop) '))
+    if find == 999:
+        break
+    if find >= len(club):
+        print(f'Error! do not exist player {find}!')
+    else:
+        print(f'Extracting player {club[find]["name"]}: ')
+for i, g in enumerate(club[find]['goals']):
+    print(f'  => on matche {i+1}, make {g} goals')
+print('Ending...')
