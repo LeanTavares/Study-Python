@@ -1,0 +1,8 @@
+def write(msg):
+    t = len(msg) + 4
+    print('~'*t)
+    print(f' {msg}')
+    print('^'*t)
+
+
+write('Testing terminal design')

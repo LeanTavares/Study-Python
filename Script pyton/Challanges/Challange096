@@ -1,0 +1,8 @@
+def area(width, height):
+    a = width * height
+    print(f'the area total is: {a}m2')
+
+print('Total area')
+w = float(input('Width (m): '))
+h = float(input('Height (m): '))
+area (w, h)
