@@ -1,3 +1,4 @@
+from random import randint
 def sort(list):
     for cont in range (0,5):
         list.append(randint(1,10))
