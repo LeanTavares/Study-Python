@@ -1,8 +1,9 @@
 def area(w, h):
-a = w * h
-print(f'The area is {a}m2')
+    a = w * h
+    print(f'The area is {a}m2')
 
 
 width = float(input('enter a width of the area (m): '))
 height = float(input('enter a height of the area (m): '))
 area(width, height)
+

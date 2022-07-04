@@ -1,0 +1,19 @@
+from time import sleep
+
+def biggest(* n):
+    cont = big = 0
+    print('-='*30)
+    for val in n:
+        print(f'{val} ',  end ='',flush=True)
+        sleep(0.3)
+        if cont==0:
+            big = val
+        else:
+            if val>big:
+                big = val
+        cont += 1
+    print(f'{cont} values')
+    print(f'The biggest value is {big}.')
+biggest(8,6,5,4,82,32,)
+biggest(2,5,6)
+biggest(5,3)
