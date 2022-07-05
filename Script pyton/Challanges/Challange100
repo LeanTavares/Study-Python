@@ -1,5 +1,12 @@
 from random import randint
+
 def sort(list):
+    print('Sorted 5 numbers: ',end='')
     for cont in range (0,5):
-        list.append(randint(1,10))
+        n = randint(1, 10)
+        list.append(n)
+        print(f'{n} ', end='', flush = True)
+        sleep(0.3)
+        print('Ok!')
+        
 num = {}
