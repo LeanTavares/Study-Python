@@ -1,4 +1,6 @@
 from random import randint
+from time import sleep
+
 
 def sort(list):
     print('Sorted 5 numbers: ',end='')
@@ -8,5 +10,14 @@ def sort(list):
         print(f'{n} ', end='', flush = True)
         sleep(0.3)
         print('Ok!')
-        
-num = {}
+
+def sumeven(list):
+    sum = 0
+    for v in list:
+        if v % 2 == 0:
+            sum += v
+    print(f'The sum of even is {sum}')
+
+num = []
+sort(num)
+sumeven(num)
