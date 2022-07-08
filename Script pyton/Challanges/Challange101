@@ -1,0 +1,14 @@
+def vote(year):
+    from datetime import date
+    act = date.today().year
+    age = act - year
+    if age < 16:
+        return f'Whith {age} years: Dont vote'
+    elif 16 <= age < 18 or age > 65:
+        return f'Whith {age} years: Optional vote'
+    else:
+        return f'Whith {age} years: Mandatory vote'
+
+
+born = int(input('What year were you born?:'))
+print(vote(born))
