@@ -1,0 +1,13 @@
+def reg(player='<unknow>', goal=0):
+    print(f'The player {player} did {goal} goals on championship')
+
+n = str(input('Player name: '))
+g = str(input('Number of goals: '))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '':
+    reg(gol=g)
+else:
+    reg(n, g)
