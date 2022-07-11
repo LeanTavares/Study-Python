@@ -1,2 +1,8 @@
-def score ():
+def score (*n, sit=False):
+    r = dict()
+    r['All'] = len(n)
+    
 
+
+resp = score(5.5, 2.5, 9, 8.5)
+print(resp)
