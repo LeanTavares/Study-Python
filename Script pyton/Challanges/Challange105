@@ -1,8 +1,18 @@
 def score (*n, sit=False):
     r = dict()
     r['All'] = len(n)
-    
+    r['Max'] = max(n)
+    r['Min'] = min(n)
+    r['Avarage'] = sum(n)/len(n)
+    if sit:
+        if r['Avarage'] >= 7:
+            r['Status'] = 'Approved'
+        elif r['Avarage'] >= 5:
+            r['Status'] = 'Reasonable'
+        else:
+            r['Status'] = 'Reproved'
+    return r
 
 
-resp = score(5.5, 2.5, 9, 8.5)
+resp = score(5.5, 2.5, 9, 8.5, sit=True)
 print(resp)
