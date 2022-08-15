@@ -1,0 +1,4 @@
+import coin
+p = float(input('Enter a price: R$:'))
+print(f'The half is R$ {coin.half(p)})
+print
