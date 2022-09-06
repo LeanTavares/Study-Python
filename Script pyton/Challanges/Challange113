@@ -1,0 +1,20 @@
+from asyncore import read
+from re import T
+
+
+def readint(msg):
+    ok = False
+    val = 0
+    while True:
+        n= str(input(msg))
+        if n.isnumeric():
+            val = int(n)
+            ok = True
+        else:
+            print('\033[0;31mERROR! Enter a valid interger number.\033[m')
+        if ok:
+            break
+    return val
+
+n = readint('Enter a number: ')
+print(f'Your number is {n}')
